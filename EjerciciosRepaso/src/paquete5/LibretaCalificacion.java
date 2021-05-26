@@ -28,7 +28,7 @@ public class LibretaCalificacion {
         double suma = 0;
         
         for (int i = 0; i < obtenerCalificaciones().length; i++) {
-            suma = obtenerCalificaciones()[i].obtenerNota();
+            suma += obtenerCalificaciones()[i].obtenerNota();
         }
         
         promedio = suma/obtenerCalificaciones().length;
@@ -86,7 +86,7 @@ public class LibretaCalificacion {
         for (int i = 0; i < obtenerCalificaciones().length; i++) {
             cadena = String.format("%s\t\t%s - %s [%.2f]\n", cadena, 
                     obtenerCalificaciones()[i].obtenerProfesor().obtenerNombre(),
-                    obtenerCalificaciones()[i].obtenerNombreMateria(),
+                    obtenerCalificaciones()[i].obtenerNombreMateria()   ,
                     obtenerCalificaciones()[i].obtenerNota());
         }
         cadena = String.format("%sPromedio calificaciones: %.2f\n"

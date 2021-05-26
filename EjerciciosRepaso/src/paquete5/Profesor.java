@@ -13,9 +13,9 @@ public class Profesor {
     private String nombre;
     private String tipo;
     
-    public Profesor(String n, String t){
-        nombre = n;
-        tipo = t;
+    public Profesor(String nombre, String tipo){
+        this.nombre = nombre;
+        this.tipo = tipo;
     }
     
     public void establecerNombre(String n){
